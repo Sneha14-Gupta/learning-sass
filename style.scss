@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@mixin box($height:100px,$width:100px,$border:black){
+    height: $height;
+    width: $width;
+    border: 1px solid $border;
+}
+.a{
+    @include box(100px,200px,green);
+}
+.b{
+    @include box;
+}
+
+ 
